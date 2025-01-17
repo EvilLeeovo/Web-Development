@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Assignment</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: 1fr 4fr 1fr;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "left main right"
+                "footer footer footer";
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: pink;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 5px solid white;
+        }
+
+        aside.left {
+            grid-area: left;
+            background-color: pink;
+            border: 5px solid white;
+        }
+
+        aside.right {
+            grid-area: right;
+            background-color: pink;
+            border: 5px solid white;
+        }
+
+        main {
+            grid-area: main;
+            background-color: pink;
+            border: 5px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: pink;
+            border: 5px solid white;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            transition: all 0.5s ease;
+        }
+
+        .box:hover {
+            width: 120px;
+            height: 120px;
+            background-color: black;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Jianchang Li</h1>
+    </header>
+
+    <aside class="left">
+    </aside>
+
+    <main>
+        <div class="box-container">
+            <div class="box"></div>
+        </div>
+    </main>
+
+    <aside class="right">
+    </aside>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
