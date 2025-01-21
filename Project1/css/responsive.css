@@ -1,0 +1,16 @@
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .board {
+        grid-template-columns: repeat(5, 1fr); /* Reduce columns for smaller screens */
+        max-width: 300px; /* Restrict width further */
+    }
+
+    main section {
+        padding: 0 10px; /* Add padding for smaller screens */
+    }
+}
